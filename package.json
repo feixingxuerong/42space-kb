@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:local": "node scripts/sync-knowledge.mjs",
+    "build:index": "node scripts/build-search-index.mjs",
+    "build": "npm run build:index && next build"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
     "next": "16.1.6",
@@ -19,6 +23,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
