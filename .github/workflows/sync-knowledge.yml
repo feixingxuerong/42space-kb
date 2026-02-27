@@ -27,9 +27,17 @@ jobs:
 
       - name: Sync files
         run: |
+          # Sync knowledge directory
           rm -rf content/knowledge
           mkdir -p content/knowledge
           cp -r source/knowledge/. content/knowledge/
+          
+          # Sync outputs directory (for normalized snapshots)
+          rm -rf content/knowledge/outputs
+          mkdir -p content/knowledge/outputs
+          if [ -d "source/knowledge/outputs" ]; then
+            cp -r source/knowledge/outputs/. content/knowledge/outputs/
+          fi
 
       - name: Commit changes (if any)
         run: |
@@ -40,5 +48,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add content/knowledge
-          git commit -m "chore(sync): update knowledge from 42space-task"
+          git commit -m "chore(sync): update knowledge and outputs from 42space-task"
           git push

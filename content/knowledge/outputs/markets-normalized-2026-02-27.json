@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-02-27T10:00:00Z",
+  "markets": [
+    {
+      "id": "85822",
+      "question": "Will there be a COVID-19 variant more transmissible than Omicron in 2024?",
+      "description": "This market will resolve to 'Yes' if a COVID-19 variant is identified that has a higher basic reproduction number (R0) than the Omicron variant (estimated R0 of 5-8).",
+      "volume": 2450000,
+      "liquidity": 890000,
+      "closeDate": "2024-12-31T23:59:59Z",
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2026-02-27T09:45:00Z",
+      "groupItemTitle": "COVID-19",
+      "url": "https://polymarket.com/event/covid-variant-omicron",
+      "slug": "covid-variant-omicron"
+    },
+    {
+      "id": "85823",
+      "question": "Will BTC reach $100,000 by end of 2024?",
+      "description": "This market resolves based on the closing price of Bitcoin (BTC) on December 31, 2024.",
+      "volume": 5200000,
+      "liquidity": 2100000,
+      "closeDate": "2024-12-31T23:59:59Z",
+      "createdAt": "2024-02-01T08:00:00Z",
+      "updatedAt": "2026-02-27T09:50:00Z",
+      "groupItemTitle": "Crypto",
+      "url": "https://polymarket.com/event/btc-100k-2024",
+      "slug": "btc-100k-2024"
+    },
+    {
+      "id": "85824",
+      "question": "Will the US enter a recession in 2024?",
+      "description": "This market resolves to 'Yes' if the NBER declares a US recession during 2024.",
+      "volume": 3100000,
+      "liquidity": 1200000,
+      "closeDate": "2024-12-31T23:59:59Z",
+      "createdAt": "2024-01-20T12:00:00Z",
+      "updatedAt": "2026-02-27T09:30:00Z",
+      "groupItemTitle": "Economics",
+      "url": "https://polymarket.com/event/us-recession-2024",
+      "slug": "us-recession-2024"
+    },
+    {
+      "id": "85825",
+      "question": "Will Taylor Swift announce retirement in 2024?",
+      "description": "This market resolves based on official announcement from Taylor Swift or her representatives.",
+      "volume": 450000,
+      "liquidity": 180000,
+      "closeDate": "2024-12-31T23:59:59Z",
+      "createdAt": "2024-03-01T15:00:00Z",
+      "updatedAt": "2026-02-27T08:15:00Z",
+      "groupItemTitle": "Entertainment",
+      "url": "https://polymarket.com/event/taylor-swift-retirement",
+      "slug": "taylor-swift-retirement"
+    },
+    {
+      "id": "85826",
+      "question": "Will SpaceX land humans on Mars by 2030?",
+      "description": "This market resolves to 'Yes' if SpaceX successfully lands humans on Mars surface by December 31, 2030.",
+      "volume": 1800000,
+      "liquidity": 750000,
+      "closeDate": "2030-12-31T23:59:59Z",
+      "createdAt": "2024-02-15T09:00:00Z",
+      "updatedAt": "2026-02-27T07:30:00Z",
+      "groupItemTitle": "Space",
+      "url": "https://polymarket.com/event/spacex-mars-2030",
+      "slug": "spacex-mars-2030"
+    },
+    {
+      "id": "85827",
+      "question": "Will AI pass the Turing Test by 2025?",
+      "description": "This market resolves based on consensus among AI researchers that an AI system has passed a rigorous Turing Test.",
+      "volume": 2900000,
+      "liquidity": 980000,
+      "closeDate": "2025-12-31T23:59:59Z",
+      "createdAt": "2024-01-25T11:00:00Z",
+      "updatedAt": "2026-02-27T09:00:00Z",
+      "groupItemTitle": "AI",
+      "url": "https://polymarket.com/event/ai-turing-test-2025",
+      "slug": "ai-turing-test-2025"
+    }
+  ]
+}
