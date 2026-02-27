@@ -189,3 +189,35 @@ export function getRecentDocs(limit: number = 5): DocMeta[] {
 
   return docsWithMtime
 }
+
+/**
+ * Get sync status from index.md - find "Last updated" line.
+ */
+export function getIndexSyncInfo(): { lastUpdated: string | null; generatedAt: string | null } {
+  const indexPath = path.join(process.cwd(), 'content/knowledge/index.md')
+  const searchIndexPath = path.join(process.cwd(), 'public/search-index.json')
+
+  let lastUpdated: string | null = null
+  let generatedAt: string | null = null
+
+  // Parse index.md for "Last updated" line
+  if (fs.existsSync(indexPath)) {
+    const raw = fs.readFileSync(indexPath, 'utf8')
+    const match = raw.match(/Last updated[:\s]*(\d{4}[年/-]\d{2}[月/-]\d{2})/i)
+    if (match) {
+      lastUpdated = match[1].replace(/年/g, '-').replace(/月/g, '-').replace(/日/g, '')
+    }
+  }
+
+  // Read search-index.json generatedAt
+  if (fs.existsSync(searchIndexPath)) {
+    try {
+      const indexData = JSON.parse(fs.readFileSync(searchIndexPath, 'utf8'))
+      generatedAt = indexData.generatedAt || null
+    } catch {
+      // ignore parse errors
+    }
+  }
+
+  return { lastUpdated, generatedAt }
+}
