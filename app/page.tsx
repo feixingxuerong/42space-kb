@@ -48,13 +48,13 @@ export default function Home() {
           <h2 className="text-lg font-semibold mb-4 text-zinc-300">快捷入口</h2>
           <div className="flex gap-3">
             <Link
-              href="/knowledge/index"
+              href="/docs/index"
               className="px-4 py-2 bg-zinc-100 text-zinc-900 rounded-md font-medium hover:bg-zinc-200 transition-colors"
             >
               Index
             </Link>
             <Link
-              href="/knowledge/sources"
+              href="/docs/sources"
               className="px-4 py-2 bg-zinc-800 text-zinc-100 rounded-md font-medium hover:bg-zinc-700 transition-colors"
             >
               Sources
@@ -69,7 +69,7 @@ export default function Home() {
             {recentDocs.map((doc) => (
               <li key={doc.slug}>
                 <Link
-                  href={`/knowledge/${doc.slug}`}
+                  href={`/docs/${doc.slug}`}
                   className="block p-3 bg-zinc-900/50 rounded-md hover:bg-zinc-800/50 transition-colors"
                 >
                   <div className="font-medium text-zinc-100">{doc.title}</div>
